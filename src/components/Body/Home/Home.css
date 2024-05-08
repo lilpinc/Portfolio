@@ -18,14 +18,22 @@ main {
   text-align: left;
 }
 
+.summary2 {
+  text-align: left;
+  margin: 0 5vw;
+  width: 800px;
+}
+
 #about {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  margin-left: 10vw;
+  text-align: right;
 }
 
 #skills {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  margin-left: 10vw;
+  text-align: right;
 }
 
 .hidden {
@@ -35,10 +43,17 @@ main {
   transform: translateX(-50%);
 }
 
+h1 {
+  width: 20vw;
+  text-align: right;
+}
+#itsame{
+  width: 100vw;
+}
 
 .hidden3 {
   transform: translateY(50%)
-} 
+}
 
 .show {
   opacity: 1;
@@ -57,7 +72,8 @@ main {
 
 .languages {
   display: flex;
-  justify-content: center;
+  align-items: left;
+  flex-wrap: wrap;
 }
 
 .skills {
@@ -67,13 +83,35 @@ main {
   font-size: 20px;
 }
 
+.stack {
+  display: block;
+}
+
 .paragraphs {
   font-size: 25px;
 }
 
 .projects {
   border: solid black 2px;
-  margin:2vh 20vw;
+  display: block;
   padding: 5px;
-  font-size: 20px;
+
+}
+
+#experience {
+  display: flex;
+  margin-left: 10vw;
+  text-align: right;
+}
+
+#projects {
+  display: flex;
+  margin-left: 10vw;
+  text-align: right;
+}
+
+#education {
+  display: flex;
+  margin-left: 10vw;
+  text-align: right;
 }
