@@ -24,22 +24,14 @@ main {
   width: 800px;
 }
 
-#about {
-  display: flex;
-  margin-left: 10vw;
-  text-align: right;
-}
-
-#skills {
-  display: flex;
-  margin-left: 10vw;
-  text-align: right;
-}
 
 .hidden {
   opacity: 0;
-  transition: all 1s;
-  height: 100vh;
+  transition: all 1.5s;
+  margin-bottom: 20vh;
+  margin-left: 10vw;
+  text-align: right;
+  display: flex;
   transform: translateX(-50%);
 }
 
@@ -49,10 +41,6 @@ h1 {
 }
 #itsame{
   width: 100vw;
-}
-
-.hidden3 {
-  transform: translateY(50%)
 }
 
 .show {
@@ -77,8 +65,9 @@ h1 {
 }
 
 .skills {
-  border: solid black 2px;
+  border: solid var(--primary-text-color) 2px;
   margin: 1vw;
+  margin-left: 0;
   padding: 5px;
   font-size: 20px;
 }
@@ -92,26 +81,11 @@ h1 {
 }
 
 .projects {
-  border: solid black 2px;
+  border: solid var(--primary-text-color) 2px;
   display: block;
   padding: 5px;
+  margin-bottom: 3vw;
 
 }
 
-#experience {
-  display: flex;
-  margin-left: 10vw;
-  text-align: right;
-}
 
-#projects {
-  display: flex;
-  margin-left: 10vw;
-  text-align: right;
-}
-
-#education {
-  display: flex;
-  margin-left: 10vw;
-  text-align: right;
-}

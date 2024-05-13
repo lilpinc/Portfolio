@@ -1,4 +1,18 @@
 * {
-    background-color: #e0fbf8;
-    font-family: "Courier New";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root{
+--background-color: #e0fbf8;
+--primary-text-color:black;
+--border-color: coral;
+
+}
+
+[data-theme="crazy"]{
+    --background-color: linear-gradient(to right, #515151,coral);
+    --primary-text-color:#e0fbf8;
+    --border-color: #e0fbf8;
 }

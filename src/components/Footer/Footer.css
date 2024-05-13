@@ -1,0 +1,10 @@
+.footer{
+    padding: 3vw;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--border-color) solid 20px;
+}
+.sourcelinks{
+    padding: 10px;
+}
