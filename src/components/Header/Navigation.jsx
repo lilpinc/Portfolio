@@ -1,7 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import './Navigation.css'
+import './Navigation.css';
+import Pdf from '../Body/Resume/AnnaBrittaPincusResume.pdf';
 
 export default function Navigation({ handleChange, isChecked }) {
 
@@ -51,7 +52,7 @@ useEffect(() => {
           <Link className="nav-item style" to="#about">about</Link>
           <Link className="nav-item style" to="#experience">work</Link>
           <Link className="nav-item style" to="#projects">projects</Link>
-          <button className="resumebtn"><a className="resumebtn style" href="" download>Resume</a></button>
+          <button className="resumebtn"><a className="resumebtn style" href = {Pdf} target = "_blank">Resume</a></button>
           <label htmlFor="check" className="switch">
             <input type="checkbox" className="toggle" id="check" onChange={handleChange} checked={isChecked} />
             <span className="slider round"></span>
