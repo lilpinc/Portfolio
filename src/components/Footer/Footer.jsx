@@ -14,7 +14,7 @@ export default function Footer() {
                 <Link to="https://github.com/lilpinc" className="sourcelinks" target = "_blank">
                 <i className="fa-brands fa-square-github"></i>
                 </Link>
-                <Link to="https://github.com/lilpinc" className="sourcelinks" target = "_blank">
+                <Link to="mailto:ab.pincus002@gmail.com" className="sourcelinks">
                 <i className="fa-solid fa-envelope"></i>
                 </Link>
                 </div>
