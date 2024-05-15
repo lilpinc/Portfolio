@@ -4,9 +4,15 @@ main {
 
 .home {
   font-size: 40px;
-  margin-top: 20vh;
-  height: 60vh;
-  width: 100vw;
+  margin-top: 5vh;
+  padding-top: 10vh;
+  height: 45vh;
+  margin-bottom: 20vh;
+  width: 80vw;
+  background: var(--info-background-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: var(--border);
 }
 
 .size {
@@ -24,15 +30,19 @@ main {
   width: 800px;
 }
 
-
 .hidden {
   opacity: 0;
+  transition: all 2.5s;
+  transform: translateX(-50%);
+}
+.article {
   transition: all 1.5s;
   margin-bottom: 20vh;
   margin-left: 10vw;
   text-align: right;
   display: flex;
-  transform: translateX(-50%);
+  border-right: var(--article-border);
+  margin-right: 5vw;
 }
 
 h1 {
@@ -70,6 +80,7 @@ h1 {
   margin-left: 0;
   padding: 5px;
   font-size: 20px;
+  background-color: var(--light-coral);
 }
 
 .stack {
@@ -81,11 +92,22 @@ h1 {
 }
 
 .projects {
-  border: solid var(--primary-text-color) 2px;
+  border: var(--border-type);
   display: block;
   padding: 5px;
   margin-bottom: 3vw;
 
 }
 
+.proj{
+  border-bottom: solid var(--primary-text-color) 2px ;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-link:hover{
+  transform: scale(1.1);
+}
 
+.extra-toggles{
+  align-items: end;
+}

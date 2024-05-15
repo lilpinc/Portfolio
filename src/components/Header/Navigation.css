@@ -7,6 +7,10 @@
     left: 1rem;
     position: absolute;
     top: 2rem;
+    transition: transform .7s ease-in-out;
+}
+.logo:hover{
+  transform: var(--spin);
 }
 .nav-bar{
     align-items: center;
@@ -112,4 +116,17 @@ ul{
     border-radius: 50%;
   }
   
-  
+  .hide {
+    opacity: 0;
+    transition: all 1.5s;
+    margin-bottom: 20vh;
+    margin-left: 10vw;
+    text-align: right;
+    display: flex;
+    transform: translateY(-50%);
+  }
+
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

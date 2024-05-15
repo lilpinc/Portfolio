@@ -7,12 +7,23 @@
 :root{
 --background-color: #e0fbf8;
 --primary-text-color:black;
---border-color: coral;
+--border-color: #ff7f50;
+--light-coral:#fcbda6;
+--border-type: solid var(--primary-text-color) 2px;
+--info-background-color: #ff8f66;
+--border: none;
+--article-border: rgb(255, 143, 102) dashed 10px;
 
 }
 
 [data-theme="crazy"]{
-    --background-color: linear-gradient(to right, #515151,coral);
+    --background-color: linear-gradient(to right, #515151,#ff7f50);
     --primary-text-color:#e0fbf8;
     --border-color: #e0fbf8;
+    --light-coral:#7d7370;
+    --spin: rotate(360deg);
+    --border-type: solid var(--primary-text-color) 2px ;
+    --info-background-color: #515151;
+    --border: solid var(--primary-text-color) 2px ;
+    --article-border: #e0fbf8 dashed 5px;
 }

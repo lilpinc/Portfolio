@@ -26,17 +26,21 @@ export default function Home() {
     return (
         <>
             <main>
-                <header className="home" id="home">
+                <header ref={(el) => hiddenElementsRef.current.push(el)} className="home hidden" id="home">
                     <h1 id="itsame" className="summary">Hi, I'm Anna Britta!</h1>
                     <p className="size summary">I am a full stack web developer who enjoys creating aesthetic designs with efficient and easy to read code.</p>
                 </header>
-                <section id="about" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden">
+                <section id="about" ref={(el) => hiddenElementsRef.current.push(el)} className="article hidden">
                     <h1><b>About</b></h1>
                     <div className='summary summary2'>
-                        <p className="school-info paragraphs">I want to talk all about me!</p>
+                        <p className="school-info paragraphs">Throughout my youth and into the present, I have been drawn to activities that challenge ones creativity and mind. As such, over the years I have pursued professions that require the development of unique, functional, and goal oriented programs <span>(strength training regimens + exercise therapy programs).</span></p> 
+                        <p className="school-info paragraphs">Recently, I have found that same challenge within full stack coding. I enjoy working both frontend and backend, seeing projects change and grow into smooth running apps. As a full stack developer it is my aim to continue improving upon my coding skills while working with a team to build efficiently constructed and visually pleasing products. I enjoy an encouraging environment that values collaboration and strong communication, and I would love to continue creating health focused designs.
+                        </p>
+                        <p className="school-info paragraphs">Outside of work you can find me rock climbing, painting, running, lifting, or sun bathing while reading a good book ☺︎.
+                        </p>
                     </div>
                 </section>
-                <section id="skills" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden">
+                <section id="skills" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
                     <h1><b>Skills</b></h1>
                     <div className='stack summary summary2'>
                         <div className="school-info paragraphs"><b>Languages</b>
@@ -68,7 +72,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section id="experience" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden">
+                <section id="experience" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
                     <h1><b>Experience</b></h1>
                     <div className='summary summary2'>
                         <p className="school-info paragraphs"><b>Full Stack Web Developer</b></p>
@@ -81,11 +85,11 @@ export default function Home() {
                         <p className="school-info">Advanced Wellness Centre (2020-2023)</p>
                     </div>
                 </section>
-                <section id="projects" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden">
+                <section id="projects" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
                     <h1><b>Projects</b></h1>
                     <div className='summary summary2'>
                         <div className="school-info paragraphs projects">
-                            <p><b>OmniHealth Records</b></p>
+                            <p className='proj'><b>OmniHealth Records</b> <i className="fa-solid fa-link"></i></p>
                             <p>React web app designed to help health services record and update facility and client information.</p>
                             <div className="languages">
                                 <li className="skills">React</li>
@@ -98,7 +102,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="school-info paragraphs projects">
-                            <p><b>Project Hyperdrive</b></p>
+                            <p className='proj'><b>Project Hyperdrive</b> <i className="fa-solid fa-link"></i></p>
                             <p>Interactive space travel website designed as an educational tool to learn more about exoplanets outside of our solar system.</p>
                             <div className="languages">
                                 <li className="skills">Javascript (ES6)</li>
@@ -112,7 +116,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="school-info paragraphs projects">
-                            <p><b>ABP Fitness</b></p>
+                            <p className='proj'><b>ABP Fitness</b> <i className="fa-solid fa-link"></i></p>
                             <p>Fitness website designed to promote a personal training business via pre-programmed workouts and online training.</p>
                             <div className="languages">
                                 <li className="skills">React</li>
@@ -124,7 +128,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section id="education" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden">
+                <section id="education" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
                     <h1><b>Education</b></h1>
                     <div className='summary summary2'>
                         <p className="school-name ">University of Denver (2023) </p>

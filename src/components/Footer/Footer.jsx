@@ -9,10 +9,13 @@ export default function Footer() {
                 <p>Created by me © 2024</p>
                 <div>
                 <Link to="https://www.linkedin.com/in/anna-britta-pincus-25293b137/" className="sourcelinks">
-                    LinkedIn
+                <i className="fa-brands fa-linkedin"></i>
                 </Link>
                 <Link to="https://github.com/lilpinc" className="sourcelinks">
-                    Github
+                <i className="fa-brands fa-square-github"></i>
+                </Link>
+                <Link to="https://github.com/lilpinc" className="sourcelinks">
+                <i className="fa-solid fa-envelope"></i>
                 </Link>
                 </div>
             </div>

@@ -8,3 +8,17 @@
 .sourcelinks{
     padding: 10px;
 }
+.fa-brands{
+    font-size:50px;
+    color: var(--primary-text-color);
+}
+.fa-solid{
+    font-size:50px;
+    color: var(--primary-text-color);
+}
+.fa-brands:hover{
+    transform: scale(1.1);
+  }
+.fa-solid:hover{
+    transform: scale(1.1);
+  }

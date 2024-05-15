@@ -1,25 +1,60 @@
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Navigation.css'
 
 export default function Navigation({ handleChange, isChecked }) {
+
+  const visible = useRef([]);
+  const logo = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+        console.log(entries)
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target)
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        })
+    });
+
+    visible.current.forEach((el) => observer.observe(el));
+}, [visible.current]);
+
+useEffect(() => {
+  const observer = new IntersectionObserver((entries) => {
+      console.log(entries)
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('display');
+              observer.unobserve(entry.target)
+          } else {
+              entry.target.classList.remove('display');
+          }
+      })
+  });
+
+  logo.current.forEach((el) => observer.observe(el));
+}, [logo.current]);
 
 
   return (
     <>
       <section id="navigation">
         <div>
-          <img className="logo" src="/ABP.png" alt="logo" />
+          <img ref={(el) => logo.current.push(el)} className="logo noshow" src="/ABP2.png" alt="logo" />
         </div>
-        <ul className="nav-bar">
+        <ul ref={(el) => visible.current.push(el)} className="nav-bar hide">
           <Link className="nav-item style" to="#about">about</Link>
           <Link className="nav-item style" to="#experience">work</Link>
           <Link className="nav-item style" to="#projects">projects</Link>
-          <button className="resumebtn"><a className="resumebtn style" href="resume/Anna-Britta-Pincus.pdf" download>Resume</a></button>
+          <button className="resumebtn"><a className="resumebtn style" href="" download>Resume</a></button>
           <label htmlFor="check" className="switch">
             <input type="checkbox" className="toggle" id="check" onChange={handleChange} checked={isChecked} />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
         </ul>
       </section>
