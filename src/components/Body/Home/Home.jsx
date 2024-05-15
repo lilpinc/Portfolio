@@ -30,6 +30,7 @@ export default function Home() {
                     <h1 id="itsame" className="summary">Hi, I'm Anna Britta!</h1>
                     <p className="size summary">I am a full stack web developer who enjoys creating aesthetic designs with efficient and easy to read code.</p>
                 </header>
+                <img id="mypic"src="/me.jpg" alt="me" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden" />
                 <section id="about" ref={(el) => hiddenElementsRef.current.push(el)} className="article hidden">
                     <h2><b>About</b></h2>
                     <div className='summary summary2'>

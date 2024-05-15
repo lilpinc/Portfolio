@@ -35,20 +35,23 @@ ul{
 .nav-item{
     padding: 2vw;
 }
-.resumebtn{
-    padding: 5px;
-    color: black;
-}
-.resumebtn:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-  }
+
+
 .nav-item:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     cursor: pointer;
   }
+  .resumebtn{
+    padding: 5px;
+    color: black;
+}
+.resumebtn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
 
   /* The switch - the box around the slider */
 .switch {
