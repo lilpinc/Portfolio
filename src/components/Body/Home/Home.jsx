@@ -31,9 +31,9 @@ export default function Home() {
                     <p className="size summary">I am a full stack web developer who enjoys creating aesthetic designs with efficient and easy to read code.</p>
                 </header>
                 <section id="about" ref={(el) => hiddenElementsRef.current.push(el)} className="article hidden">
-                    <h1><b>About</b></h1>
+                    <h2><b>About</b></h2>
                     <div className='summary summary2'>
-                        <p className="school-info paragraphs">Throughout my youth and into the present, I have been drawn to activities that challenge ones creativity and mind. As such, over the years I have pursued professions that require the development of unique, functional, and goal oriented programs <span>(strength training regimens + exercise therapy programs).</span></p> 
+                        <p className="school-info paragraphs">Throughout my youth and into the present, I have been drawn to activities that challenge ones creativity and mind. As such, over the years I have pursued professions that require the development of unique, functional, and goal oriented programs<span id="pre-program">(strength training regimens + exercise therapy programs).</span></p> 
                         <p className="school-info paragraphs">Recently, I have found that same challenge within full stack coding. I enjoy working both frontend and backend, seeing projects change and grow into smooth running apps. As a full stack developer it is my aim to continue improving upon my coding skills while working with a team to build efficiently constructed and visually pleasing products. I enjoy an encouraging environment that values collaboration and strong communication, and I would love to continue creating health focused designs.
                         </p>
                         <p className="school-info paragraphs">Outside of work you can find me rock climbing, painting, running, lifting, or sun bathing while reading a good book ☺︎.
@@ -41,7 +41,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section id="skills" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
-                    <h1><b>Skills</b></h1>
+                    <h2><b>Skills</b></h2>
                     <div className='stack summary summary2'>
                         <div className="school-info paragraphs"><b>Languages</b>
                             <div className="languages">
@@ -73,7 +73,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section id="experience" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
-                    <h1><b>Experience</b></h1>
+                    <h2><b>Experience</b></h2>
                     <div className='summary summary2'>
                         <p className="school-info paragraphs"><b>Full Stack Web Developer</b></p>
                         <p className="school-info">University of Denver (2023)</p>
@@ -86,7 +86,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section id="projects" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
-                    <h1><b>Projects</b></h1>
+                    <h2><b>Projects</b></h2>
                     <div className='summary summary2'>
                         <div className="school-info paragraphs projects">
                             <p className='proj'><b>OmniHealth Records</b> <i className="fa-solid fa-link"></i></p>
@@ -129,7 +129,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section id="education" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
-                    <h1><b>Education</b></h1>
+                    <h2><b>Education</b></h2>
                     <div className='summary summary2'>
                         <p className="school-name ">University of Denver (2023) </p>
                         <p className="school-info">Full Stack Coding Boot Camp</p>

@@ -52,7 +52,7 @@ useEffect(() => {
           <Link className="nav-item style" to="#about">about</Link>
           <Link className="nav-item style" to="#experience">work</Link>
           <Link className="nav-item style" to="#projects">projects</Link>
-          <button className="resumebtn"><a className="resumebtn style" href = {Pdf} target = "_blank">Resume</a></button>
+          <button className="resumebtn nav-item"><a className="resumebtn style" href = {Pdf} target = "_blank">Resume</a></button>
           <label htmlFor="check" className="switch">
             <input type="checkbox" className="toggle" id="check" onChange={handleChange} checked={isChecked} />
             <span className="slider round"></span>
