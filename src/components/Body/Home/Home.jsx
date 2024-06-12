@@ -127,6 +127,17 @@ export default function Home() {
                                 <li className="skills">Netlify</li>
                             </div>
                         </div>
+                        <div className="school-info paragraphs projects">
+                            <p className='proj'><b>Daily Sends</b> <i className="fa-solid fa-link"></i></p>
+                            <p>React web app designed as a space for climbers to record their outdoor ascents and daily training sessions.</p>
+                            <div className="languages">
+                                <li className="skills">React</li>
+                                <li className="skills">Express.js</li>
+                                <li className="skills">Node.js</li>
+                                <li className="skills">CSS</li>
+                                <li className="skills">Netlify</li>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section id="education" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
