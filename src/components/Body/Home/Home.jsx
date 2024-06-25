@@ -1,5 +1,6 @@
 import './Home.css'
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
@@ -30,11 +31,11 @@ export default function Home() {
                     <h1 id="itsame" className="summary">Hi, I'm Anna Britta!</h1>
                     <p className="size summary">I am a full stack web developer who enjoys creating aesthetic designs with efficient and easy to read code.</p>
                 </header>
-                <img id="mypic"src="/me.jpg" alt="me" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden" />
+                <img id="mypic" src="/me.jpg" alt="me" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden" />
                 <section id="about" ref={(el) => hiddenElementsRef.current.push(el)} className="article hidden">
                     <h2><b>About</b></h2>
                     <div className='summary summary2'>
-                        <p className="school-info paragraphs">Throughout my youth and into the present, I have been drawn to activities that challenge ones creativity and mind. As such, over the years I have pursued professions that require the development of unique, functional, and goal oriented programs<span id="pre-program">(strength training regimens + exercise therapy programs).</span></p> 
+                        <p className="school-info paragraphs">Throughout my youth and into the present, I have been drawn to activities that challenge ones creativity and mind. As such, over the years I have pursued professions that require the development of unique, functional, and goal oriented programs<span id="pre-program">(strength training regimens + exercise therapy programs).</span></p>
                         <p className="school-info paragraphs">Recently, I have found that same challenge within full stack coding. I enjoy working both frontend and backend, seeing projects change and grow into smooth running apps. As a full stack developer it is my aim to continue improving upon my coding skills while working with a team to build efficiently constructed and visually pleasing products. I enjoy an encouraging environment that values collaboration and strong communication, and I would love to continue creating health focused designs.
                         </p>
                         <p className="school-info paragraphs">Outside of work you can find me rock climbing, painting, running, lifting, or sun bathing while reading a good book <span id="smiley">☺︎</span>.
@@ -90,7 +91,11 @@ export default function Home() {
                     <h2><b>Projects</b></h2>
                     <div className='summary summary2'>
                         <div className="school-info paragraphs projects">
-                            <p className='proj'><b>OmniHealth Records</b> <i className="fa-solid fa-link"></i></p>
+                            <p className='proj'><b>OmniHealth Records</b>
+                                <Link to="https://github.com/shockeyj9/Omnihealth-Records" target="_blank" className="color">
+                                    <i className="fa-solid fa-link"></i>
+                                </Link>
+                            </p>
                             <p>React web app designed to help health services record and update facility and client information.</p>
                             <div className="languages">
                                 <li className="skills">React</li>
@@ -103,7 +108,11 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="school-info paragraphs projects">
-                            <p className='proj'><b>Project Hyperdrive</b> <i className="fa-solid fa-link"></i></p>
+                            <p className='proj'><b>Project Hyperdrive</b>
+                                <Link to="https://github.com/kalaniJ94/Project_Hyperdrive" target="_blank" className="color">
+                                    <i className="fa-solid fa-link"></i>
+                                </Link>
+                            </p>
                             <p>Interactive space travel website designed as an educational tool to learn more about exoplanets outside of our solar system.</p>
                             <div className="languages">
                                 <li className="skills">Javascript (ES6)</li>
@@ -117,7 +126,11 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="school-info paragraphs projects">
-                            <p className='proj'><b>ABP Fitness</b> <i className="fa-solid fa-link"></i></p>
+                            <p className='proj'><b>ABP Fitness</b>
+                                <Link to="https://github.com/lilpinc/Personal-Training-Website" target="_blank" className="color">
+                                    <i className="fa-solid fa-link"></i>
+                                </Link>
+                            </p>
                             <p>Fitness website designed to promote a personal training business via pre-programmed workouts and online training.</p>
                             <div className="languages">
                                 <li className="skills">React</li>
@@ -128,7 +141,11 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="school-info paragraphs projects">
-                            <p className='proj'><b>Daily Sends</b> <i className="fa-solid fa-link"></i></p>
+                            <p className='proj'><b>Daily Sends</b>
+                                <Link to="https://github.com/lilpinc/Rock-Climbing-Log" target="_blank" className="color">
+                                    <i className="fa-solid fa-link"></i>
+                                </Link>
+                            </p>
                             <p>React web app designed as a space for climbers to record their outdoor ascents and daily training sessions.</p>
                             <div className="languages">
                                 <li className="skills">React</li>

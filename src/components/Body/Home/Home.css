@@ -25,6 +25,10 @@ border-radius: 30px;
 border: solid var(--primary-text-color) 1px;
 }
 
+.color{
+  color: black;
+}
+
 .size {
   font-size: 30px;
 }
