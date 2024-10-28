@@ -60,7 +60,13 @@ border: solid var(--primary-text-color) 1px;
   border-right: var(--article-border);
   margin-right: 5vw;
 }
-
+.award{
+  margin:20px 8px;
+  font-weight: bold;
+}
+.fa-star{
+   margin-right:8px;
+}
 h1 {
   width: 300px;
   text-align: right;

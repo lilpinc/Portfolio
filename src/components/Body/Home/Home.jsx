@@ -90,6 +90,21 @@ export default function Home() {
                 <section id="projects" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden article">
                     <h2><b>Projects</b></h2>
                     <div className='summary summary2'>
+                    <div className="school-info paragraphs projects">
+                            <p className='proj'><b>Listings</b>
+                                <Link to="https://github.com/JosDaw/Listings" target="_blank" className="color">
+                                    <i className="fa-solid fa-link"></i>
+                                </Link>
+                            </p>
+                            <p>Home search app designed to improve user experience and prioritize mindful design & features important for communities of marginalized identities.</p>
+                            <div className="languages">
+                                <li className="skills">React native</li>
+                                <li className="skills">Typescript</li>
+                                <li className="skills">Firebase</li>
+                                <li className="skills">Expo.io</li>
+                            </div>
+                            <div class="award"><i class="fa fa-star" aria-hidden="true"></i>Won "Best Accessibility Solution" and "Best DEI Hack" at Technica 2024 Hackathon</div>
+                        </div>
                         <div className="school-info paragraphs projects">
                             <p className='proj'><b>OmniHealth Records</b>
                                 <Link to="https://github.com/shockeyj9/Omnihealth-Records" target="_blank" className="color">
