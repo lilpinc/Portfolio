@@ -1,6 +1,8 @@
 import './Home.css'
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import video from "/video.mp4";
+
 
 export default function Home() {
 
@@ -91,11 +93,14 @@ export default function Home() {
                     <h2><b>Projects</b></h2>
                     <div className='summary summary2'>
                     <div className="school-info paragraphs projects">
-                            <p className='proj'><b>Listings</b>
-                                <Link to="https://github.com/JosDaw/Listings" target="_blank" className="color">
+                            <div className='proj'><b>Listings</b>
+                            <div>
+                           <a href={video} target = "_blank"> <i className="fa fa-file-image-o fa-link color" aria-hidden="true"></i></a>
+                                <Link to="https://github.com/JosDaw/Listings" target="_blank" className="color images">
                                     <i className="fa-solid fa-link"></i>
                                 </Link>
-                            </p>
+                                </div>
+                            </div>
                             <p>Home search app designed to improve user experience and prioritize mindful design & features important for communities of marginalized identities.</p>
                             <div className="languages">
                                 <li className="skills">React native</li>
@@ -103,7 +108,7 @@ export default function Home() {
                                 <li className="skills">Firebase</li>
                                 <li className="skills">Expo.io</li>
                             </div>
-                            <div class="award"><i class="fa fa-star" aria-hidden="true"></i>Won "Best Accessibility Solution" and "Best DEI Hack" at Technica 2024 Hackathon</div>
+                            <div className="award"><i className="fa fa-star" aria-hidden="true"></i>Won "Best Accessibility Solution" and "Best DEI Hack" at Technica 2024 Hackathon</div>
                         </div>
                         <div className="school-info paragraphs projects">
                             <p className='proj'><b>OmniHealth Records</b>
