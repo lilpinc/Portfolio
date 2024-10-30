@@ -17,7 +17,8 @@
 }
 
 [data-theme="crazy"]{
-    --background-color: linear-gradient(to right, #515151,#ff7f50);
+    /* --background-color: linear-gradient(to right, #515151,#ff7f50); */
+    --background-color: rgb(34, 34, 34);
     --primary-text-color:#e0fbf8;
     --border-color: #e0fbf8;
     --light-coral:#7d7370;
